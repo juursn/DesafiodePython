@@ -1,2 +1,8 @@
 m = float(input("Digite a distância em metros: "))
-print(f"Sua medida de {m}m corresponde a: \n {m/1000}km \n {m/100}hm \n {m/10}dam \n {m*10}dm \n {m*100}cm {m*1000}mm")
+km = m/1000
+hm = m/100
+dam = m/10
+dm = m*10
+cm = m*100
+mm = m*1000
+print(f"Sua medida de {m}m corresponde a: \n {km}km \n {hm}hm \n {dam}dam \n {dm}dm \n {cm}cm \n {mm}mm")
