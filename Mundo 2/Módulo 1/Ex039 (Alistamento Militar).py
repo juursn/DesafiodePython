@@ -2,6 +2,7 @@ from datetime import datetime
 ano = int(input("Digite o ano do seu nascimento: "))
 atual = datetime.now().year
 temp = atual-ano
+print(f"Quem nasceu em {ano} tem {temp} em {atual}")
 if  temp == 18:
     print("Você precisa se alistar!")
 elif  temp < 18:

@@ -8,10 +8,9 @@ l2 = int(input("Digite o segundo lado: "))
 l3 = int(input("Digite o segundo lado: "))
 if triangulo(l1,l2,l3) == True:
     print("Forma um lindo triângulo:")
-    
     if l1 == l2 == l3:
         print("Equilátero!")
-    elif l1 == l2 or l2==l3 or l1 == l3:
+    elif l1 == l2 or l2 == l3 or l1 == l3:
         print("Isóceles!")
     else:
         print("Escaleno!")

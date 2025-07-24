@@ -10,8 +10,12 @@ if pagar == 1:
 elif pagar == 2:
     print(f"O valor a ser pago é de {valor*0.95}")
 elif pagar == 3:
-    print(f"O valor a ser pago é de {valor}")
+    print(f"O valor a ser pago é de {valor} em parcelas de {valor/2}")
 elif pagar == 4:
-    print(f"O valor a ser pago é de {valor*1.20}")
+    x = int(input("Em quantas vezes você deseja pagar? "))
+    if x>=3:
+        print(f"O valor a ser pago é de {valor*1.20} em parcelas de {(valor*1.20)/x}")
+    else:
+        print("Valor inválido")
 else:
     print("Valor inválido")
